@@ -100,23 +100,23 @@ public class RadioTest {
     }
 
     @Test
-    public void TESTP() {
-        Radio radio = new Radio();
-        radio.setCurrentVolume(11);
-        radio.volumePlus();
-        int actual = radio.getCurrentVolume();
-        int exoected = 10;
-        Assertions.assertEquals(exoected, actual);
-
-    }
-
-    @Test
 
     public void testpluss() {
         Radio radio = new Radio();
         radio.setCurrentStation(11);
         radio.next();
         int actual = radio.getCurrentStation();
+        int exoected = 1;
+        Assertions.assertEquals(exoected, actual);
+    }
+
+    @Test
+
+    public void volumepl() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(11);
+        radio.volumePlus();
+        int actual = radio.getCurrentVolume();
         int exoected = 1;
         Assertions.assertEquals(exoected, actual);
     }
